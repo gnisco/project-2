@@ -166,3 +166,25 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
+/*--------------------------------------------Footer*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #585352;
+  color: #fff;
+}
+
+@media (max-height:1000px){
+  footer { position: static; }
+}
+
+.footer-left {
+  width: 60%;
+  height: 100px;
+}
+
+.manufacterer-list li {
+		display: inline;
+		text-decoration: bullets;
+}
