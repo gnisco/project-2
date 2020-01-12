@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_AerXI8KRfSl1OUC9ktvwW");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="container-fluid">
+            <div class="col">
+                <div class="row bg-color-name-title">
+                    <div style="clear: both">
+                        <h1 class="title" style="float: left">Converting to EV</h1>
+                        <h3 class="sub-title hidden-sm hidden-xs" style="float: right">Helping to find the perfect EV for you</h3>
+                    </div>
+                    <hr />
+                </div>
+            </div>
+            <div class="row">
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="why-switch.html">Why switch?</a>
+                    <a href="find-your-ev.html">Find your EV</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                </div>
+            </div>
+        </header>
+        <section class="container-fluid">
+            <div class="row contact-form">
+                <div class="contact-heading">
+                    <h4>Do you have any further questions?</h4>
+                    <h5>Ask us here:</h5>
+                </div>
+                <div class="center-form">
+                    <form onsubmit="return sendMail(this);" method="POST">
+                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                        <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                        <textarea rows="5" name="enquirysummary" class="form-control" id="enquirysummary" placeholder="Your Question" required></textarea>
+                        <button type="submit" class="btn btn-secondary center-block">Send Enquiry</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="push"></div>
+    </div>
+    
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <p>Manufacturers featured:</p>
+            <div class="table">
+                <ul class="manufacterer-list">
+                    | <li class="item"><a href="https://www.audi.co.uk/" target="_blank">Audi</a></li>
+                    | <li class="item"><a href="https://www.honda.co.uk/cars.html" target="_blank">Honda</a></li>
+                    | <li class="item"><a href="https://www.hyundai.co.uk" target="_blank">Hyundai</a></li>
+                    | <li class="item"><a href="https://www.jaguar.co.uk" target="_blank">Jaguar</a></li>
+                    | <li class="item"><a href="https://www.kia.com" target="_blank">Kia</a></li>
+                    | <li class="item"><a href="https://www.mercedes-benz.com" target="_blank">Mercedes</a></li>
+                    | <li class="item"><a href="https://www.renault.co.uk" target="_blank">Renault</a></li>
+                    | <li class="item"><a href="https://www.seat.co.uk" target="_blank">Seat</a></li>
+                    | <li class="item"><a href="https://www.smart.com" target="_blank">Smart</a></li>
+                    | <li class="item"><a href="https://www.tesla.com" target="_blank">Tesla</a></li>
+                    | <li class="item"><a href="https://www.vauxhall.co.uk" target="_blank">Vauxhall</a></li>
+                    | <li class="item"><a href="https://www.volkswagen.co.uk" target="_blank">Volkswagen</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-right">
+            <a href="contact.html">Contact us</a>
+            <p class="footer-company-name">© 2020 - Gianluca Nisco</p>
+        </div>
+    </footer>
+    <script src="assets/js/email.js"></script>
+</body>
