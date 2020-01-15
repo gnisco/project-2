@@ -264,15 +264,6 @@ button[type="submit"] {
 
 /*--------------------------------------------Electric Vehicles*/
 
-a {
-  text-decoration: none;
-}
-.list_item {
-  max-width: 500px;
-  padding: 80px 1.5rem;
-  margin: 0 auto;
-}
-
 .header-list {
   display: flex;
   align-items: center;
@@ -306,16 +297,16 @@ a {
   text-decoration: none;
 }
 
-.car {
+.list-name {
   font-size: 22px;
   color: inherit !important;
   font-weight: 600;
   margin-bottom: .25rem;
+  text-decoration: none;
 }
 
 .meta {
   display: block;
-  flex-wrap: wrap;
   font-size: 18px;
   color: #4C9BAF;
   border-left: 15px;
@@ -325,13 +316,17 @@ a {
   text-decoration: none;
 }
 
-.meta div {
-  display:block;
-  text-decoration: none;
+.list-details {
+  margin-left: 35px;
+  float: left;
+  margin-top: 20px;
 }
 
-img {
-  display: inline-block;
+.list-img {
+  float: left;
+  max-width: 50%;
+  margin-left: 50px;
+  margin-bottom: 30px;
 }
 
 .controls {
@@ -349,6 +344,7 @@ img {
 }
  .controls a:hover {
 	 color: #585352;
+	 text-decoration: none;
 }
  .controls .sort {
 	 display: flex;
