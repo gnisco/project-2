@@ -32,9 +32,29 @@
                 </div>
             </div>
         </header>
-        <section class ="container-fluid">
-            <div class="row">
-                
+        <section class="container-fluid">
+            <div class="row row-table">
+                <div class="col-xs-12 col-sm-12 col-md-4 bg-color-conferences section-column">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="section-heading uppercase">Search for your local dealerships here:</h3>
+                        </div>
+                    </div>
+                    <div>
+                    <label for="raddressInput">Search location:</label>
+                    <input type="text" id="addressInput" size="15" />
+                    <label for="radiusSelect">Radius:</label>
+                    <select id="radiusSelect" label="Radius">
+                        <option value="50" selected>50 kms</option>
+                        <option value="30">30 km</option>
+                        <option value="20">20 km</option>
+                        <option value="10">10 km</option>
+                        </select>
+                    <input type="button" id="searchButton" value="Search" />
+                    </div>
+                    <div><select id="locationSelect" style="width: 10%; visibility: hidden"></select></div>
+                    <div id="map"></div>
+                </div>
             </div>
         </section>
         <div class="push"></div>
@@ -72,3 +92,8 @@
             <p class="copyright">Copyright 2020 - Gianluca Nisco</p>
         </div>
     </footer>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqthnqqZil9T4Tpz-2y9S13JjASnjjHPg&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
+</body>
+</html>
