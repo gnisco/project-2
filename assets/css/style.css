@@ -424,3 +424,9 @@ button[type="submit"] {
  .tags .tag:hover, .tags .tag.active {
 	 background: #4c9baf;
 }
+
+/*--------------------------------------------Map*/
+
+#map {
+    min-height: 300px;
+}
