@@ -101,7 +101,7 @@ function initMap() {
   });
 
   // Load the stores GeoJSON onto the map.
-  map.data.loadGeoJson('stores.json', {idPropertyName: 'storeid'});
+  map.data.loadGeoJson('assets/js/stores.json', {idPropertyName: 'storeid'});
 
   // Define the custom marker icons, using the store's "category".
   map.data.setStyle((feature) => {
@@ -166,25 +166,55 @@ function initMap() {
   // Make the search bar into a Places Autocomplete search bar and select
   // which detail fields should be returned about the place that
   // the user selects from the suggestions.
+  const autocomplete = new google.maps.places.Autocomplete(input, options);
 
+  autocomplete.setFields(
+      ['address_components', 'geometry', 'name']);
 
   // Set the origin point when the user selects an address
   const originMarker = new google.maps.Marker({map: map});
   originMarker.setVisible(false);
   let originLocation = map.getCenter();
 
-  
+  autocomplete.addListener('place_changed', async () => {
+    originMarker.setVisible(false);
+    originLocation = map.getCenter();
+    const place = autocomplete.getPlace();
+
+    if (!place.geometry) {
+      // User entered the name of a Place that was not suggested and
+      // pressed the Enter key, or the Place Details request failed.
+      window.alert('No address available for input: \'' + place.name + '\'');
+      return;
+    }
+
+    // Recenter the map to the selected address
+    originLocation = place.geometry.location;
+    map.setCenter(originLocation);
+    map.setZoom(9);
+    console.log(place);
 
     originMarker.setPosition(originLocation);
     originMarker.setVisible(true);
 
-  
+    // Use the selected address as the origin to calculate distances
+    // to each of the store locations
+    const rankedStores = await calculateDistances(map.data, originLocation);
+    showStoresList(map.data, rankedStores);
 
     return;
-  //});
+  });
 }
 
-
+/**
+ * Use Distance Matrix API to calculate distance from origin to each store.
+ * @param {google.maps.Data} data The geospatial data object layer for the map
+ * @param {google.maps.LatLng} origin Geographical coordinates in latitude
+ * and longitude
+ * @return {Promise<object[]>} n Promise fulfilled by an array of objects with
+ * a distanceText, distanceVal, and storeid property, sorted ascending
+ * by distanceVal.
+ */
 async function calculateDistances(data, origin) {
   const stores = [];
   const destinations = [];
@@ -291,38 +321,3 @@ function showStoresList(data, stores) {
 
   return;
 }
-
-  // const autocomplete = new google.maps.places.Autocomplete(input, options);
-
-  //autocomplete.setFields(
-     // ['address_components', 'geometry', 'name']);
-
-// inst code const origin marker
-
-//autocomplete.addListener('place_changed', async () => {
-    //originMarker.setVisible(false);
-    //originLocation = map.getCenter();
-    //const place = autocomplete.getPlace();
-
-    //if (!place.geometry) {
-      // User entered the name of a Place that was not suggested and
-      // pressed the Enter key, or the Place Details request failed.
-     // window.alert('No address available for input: \'' + place.name + '\'');
-     // return;
-    //}
-
-    // Recenter the map to the selected address
-    //originLocation = place.geometry.location;
-    //map.setCenter(originLocation);
-   // map.setZoom(9);
-    //console.log(place);
-    
-    
-    // insrt code origin marker.set
-    
-    
-    
-      // Use the selected address as the origin to calculate distances
-    // to each of the store locations
-    //const rankedStores = await calculateDistances(map.data, originLocation);
-    //showStoresList(map.data, rankedStores);
