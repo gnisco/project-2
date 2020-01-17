@@ -34,9 +34,33 @@ function get_list_of_cars_to_display(price, min_mileage, type) {
 }
 */
 
-function myFunction() {
-  document.getElementById("car_list").classList.toggle("show");
+
+
+document.getElementById("price")
+  .addEventListener("change", function(evt) {
+    console.log(evt.target.value)
+  })
+document.getElementById("range")
+  .addEventListener("change", function(evt) {
+    console.log(evt.target.value)
+  })
+document.getElementById("type")
+  .addEventListener("change", function(evt) {
+    console.log(evt.target.value)
+  })
+
+function show_cars() {
+  var car_list_filters 
 }
+
+function myFunction() {
+  document.getElementById("list_item").classList.toggle("show");
+  
+}
+
+
+
+/*
 
 function filterFunction() {
   var input, filter, range, type, price;
@@ -53,6 +77,10 @@ function filterFunction() {
     }
   }
 }
+*/
+
+
+
 
 var car_list = new List('car_list', range, price);
 car_list.sort("price", {

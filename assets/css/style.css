@@ -276,12 +276,12 @@ button[type="submit"] {
 .list__item {
   display: block;
   padding: 1rem;
-  margin: 0 0 1rem 0;
   background-color: #F4F4F4;
   border-radius: 1rem;
   color: inherit;
   transition: all .2s ease;
   text-decoration: none;
+  margin-top: 15px;
 }
 
 .list-name {

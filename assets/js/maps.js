@@ -95,23 +95,14 @@ function sanitizeHTML(strings) {
 function initMap() {
   // Create the map.
   const map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 7,
-    center: {lat: 52.632469, lng: -1.689423},
+    zoom: 9,
+    center: {lat: 51.5074, lng: 0.1278},
     styles: mapStyle,
   });
 
   // Load the stores GeoJSON onto the map.
-  map.data.loadGeoJson('assets/js/stores.json', {idPropertyName: 'storeid'});
+  map.data.loadGeoJson('stores.json', {idPropertyName: 'storeid'});
 
-  // Define the custom marker icons, using the store's "category".
-  map.data.setStyle((feature) => {
-    return {
-      icon: {
-        url: `assets/images/car-list/model-s.jpg`,
-        scaledSize: new google.maps.Size(64, 64),
-      },
-    };
-  });
 
   const apiKey = 'AIzaSyAqthnqqZil9T4Tpz-2y9S13JjASnjjHPg';
   const infoWindow = new google.maps.InfoWindow();
@@ -123,10 +114,9 @@ function initMap() {
     const phone = event.feature.getProperty('phone');
     const position = event.feature.getGeometry().get();
     const content = sanitizeHTML`
-      <img style="float:left; width:200px; margin-top:30px" src="assets/images/car-list/model-s.jpg">
       <div style="margin-left:220px; margin-bottom:20px;">
-        <h2>${name}</h2><p>${description}</p>
-        <p><b>Open:</b> ${hours}<br/><b>Phone:</b> ${phone}</p>
+        <b>Name:</b> ${name}</p>
+        <b>Phone:</b> ${phone}</p>
         <p><img src="https://maps.googleapis.com/maps/api/streetview?size=350x120&location=${position.lat()},${position.lng()}&key=${apiKey}"></p>
       </div>
       `;
@@ -203,16 +193,6 @@ function initMap() {
     return;
   });
 }
-
-/**
- * Use Distance Matrix API to calculate distance from origin to each store.
- * @param {google.maps.Data} data The geospatial data object layer for the map
- * @param {google.maps.LatLng} origin Geographical coordinates in latitude
- * and longitude
- * @return {Promise<object[]>} n Promise fulfilled by an array of objects with
- * a distanceText, distanceVal, and storeid property, sorted ascending
- * by distanceVal.
- */
 async function calculateDistances(data, origin) {
   const stores = [];
   const destinations = [];
@@ -268,13 +248,6 @@ async function calculateDistances(data, origin) {
   return distancesList;
 }
 
-/**
- * Build the content of the side panel from the sorted list of stores
- * and display it.
- * @param {google.maps.Data} data The geospatial data object layer for the map
- * @param {object[]} stores An array of objects with a distanceText,
- * distanceVal, and storeid property.
- */
 function showStoresList(data, stores) {
   if (stores.length == 0) {
     console.log('empty stores');

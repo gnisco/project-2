@@ -390,7 +390,441 @@
                 "make": "volkswagen",
                 "name": "Volkswagen Loughton",
                 "phone": "01932 642375",
-                "storeid": "26"
+                "storeid": "27"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.395579,
+                    51.368497
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "volkswagen",
+                "name": "Volkswagen Romford",
+                "phone": "01708 330540",
+                "storeid": "28"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.143686,
+                    51.508718
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "jaguar",
+                "name": "Jaguar Mayfair",
+                "phone": "020 7514 8330",
+                "storeid": "29"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.007382,
+                    51.543591
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "jaguar",
+                "name": "Jaguar Stratford",
+                "phone": "0330 088 8740",
+                "storeid": "30"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.233508,
+                    51.569581
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "jaguar",
+                "name": "Jaguar North West London",
+                "phone": "020 3985 8950",
+                "storeid": "31"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.278743,
+                    51.526318
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "jaguar",
+                "name": "Jaguar West London",
+                "phone": "020 8031 1934",
+                "storeid": "32"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.022677,
+                    51.594251
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "jaguar",
+                "name": "Jaguar Woodford",
+                "phone": "020 8031 2192",
+                "storeid": "33"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.198710,
+                    51.653772
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "jaguar",
+                "name": "Jaguar Barnet",
+                "phone": "020 8031 2087",
+                "storeid": "34"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.095139,
+                    51.427402
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "jaguar",
+                "name": "Jaguar Sidcup",
+                "phone": "020 8131 6830",
+                "storeid": "35"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.328540,
+                    51.387170
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "jaguar",
+                "name": "Jaguar Thames Ditton",
+                "phone": "020 8398 4222",
+                "storeid": "36"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.144555,
+                    51.309958
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "jaguar",
+                "name": "Jaguar Croydon",
+                "phone": "01737 742954",
+                "storeid": "37"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.384768,
+                    51.648053
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "jaguar",
+                "name": "Jaguar Watford",
+                "phone": "01923 701557",
+                "storeid": "38"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.288340,
+                    51.492160
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "kia",
+                "name": "Kia Brentford",
+                "phone": "01923 701557",
+                "storeid": "39"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.257026,
+                    51.591336
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "kia",
+                "name": "Kia Collindale",
+                "phone": "020 8200 2200",
+                "storeid": "40"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.018712,
+                    51.399134
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "kia",
+                "name": "Kia Bromley",
+                "phone": "020 8662 6133",
+                "storeid": "41"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.088425,
+                    51.428906
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "kia",
+                "name": "Kia Sidcup",
+                "phone": "020 8309 7788",
+                "storeid": "42"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.223494,
+                    51.428906
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "seat",
+                "name": "Seat Westfield",
+                "phone": "020 3597 7010",
+                "storeid": "43"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.032488,
+                    51.392404
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "seat",
+                "name": "Seat Bromley",
+                "phone": "0843 487 7831",
+                "storeid": "44"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.095928,
+                    51.427051
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "seat",
+                "name": "Seat Sidcup",
+                "phone": "020 8300 8311",
+                "storeid": "45"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.283252,
+                    51.487545
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "seat",
+                "name": "Seat Lakeside",
+                "phone": "01708 869698",
+                "storeid": "46"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.060013,
+                    51.488020
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "vauxhall",
+                "name": "Vauxhall Woolwich",
+                "phone": "020 8854 8161",
+                "storeid": "47"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.032865,
+                    51.611678
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "vauxhall",
+                "name": "Vauxhall Bristol Street Motors",
+                "phone": "020 3792 8874",
+                "storeid": "48"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.232069,
+                    51.571956
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "vauxhall",
+                "name": "Vauxhall Staples Corner",
+                "phone": "020 8604 1071",
+                "storeid": "49"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.186816,
+                    51.428984
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "vauxhall",
+                "name": "Vauxhall Wimbledon",
+                "phone": "020 3747 2956",
+                "storeid": "50"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.048950,
+                    51.394728
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "vauxhall",
+                "name": "Vauxhall Beckenham",
+                "phone": "020 8308 4376",
+                "storeid": "51"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.277903,
+                    51.526498
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "renault",
+                "name": "Renault West London",
+                "phone": "020 3199 1166",
+                "storeid": "52"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.038267,
+                    51.391698
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "renault",
+                "name": "Renault Beckenham",
+                "phone": "020 8650 9151",
+                "storeid": "53"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.055995,
+                    51.652561
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "renault",
+                "name": "Renault Enfield",
+                "phone": "020 3199 1165",
+                "storeid": "54"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.088612,
+                    51.372459
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "renault",
+                "name": "Renault Orpington",
+                "phone": "01689 473392",
+                "storeid": "55"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.261031,
+                    51.341820
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "renault",
+                "name": "Renault Wilsons",
+                "phone": "01372 736000",
+                "storeid": "56"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.139742,
+                    51.314047
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "renault",
+                "name": "Renault Croydon",
+                "phone": "020 3199 1164",
+                "storeid": "57"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.216239,
+                    51.590980
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "renault",
+                "name": "Renault Romford",
+                "phone": "01708 241081",
+                "storeid": "58"
             },
         }
     }]
