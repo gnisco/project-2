@@ -166,7 +166,7 @@ html, body {
   /*height:100%;*/
   margin: 0 auto;
   position: relative;
-  margin-bottom: -50px;
+  margin-bottom: 50px;
   min-height: calc(100vh - 70px);
 }
 
