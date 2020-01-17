@@ -1,82 +1,4 @@
-const mapStyle = [{
-  'featureType': 'administrative',
-  'elementType': 'all',
-  'stylers': [{
-    'visibility': 'on',
-  },
-  {
-    'lightness': 33,
-  },
-  ],
-},
-{
-  'featureType': 'landscape',
-  'elementType': 'all',
-  'stylers': [{
-    'color': '#f2e5d4',
-  }],
-},
-{
-  'featureType': 'poi.park',
-  'elementType': 'geometry',
-  'stylers': [{
-    'color': '#c5dac6',
-  }],
-},
-{
-  'featureType': 'poi.park',
-  'elementType': 'labels',
-  'stylers': [{
-    'visibility': 'on',
-  },
-  {
-    'lightness': 20,
-  },
-  ],
-},
-{
-  'featureType': 'road',
-  'elementType': 'all',
-  'stylers': [{
-    'lightness': 20,
-  }],
-},
-{
-  'featureType': 'road.highway',
-  'elementType': 'geometry',
-  'stylers': [{
-    'color': '#c5c6c6',
-  }],
-},
-{
-  'featureType': 'road.arterial',
-  'elementType': 'geometry',
-  'stylers': [{
-    'color': '#e4d7c6',
-  }],
-},
-{
-  'featureType': 'road.local',
-  'elementType': 'geometry',
-  'stylers': [{
-    'color': '#fbfaf7',
-  }],
-},
-{
-  'featureType': 'water',
-  'elementType': 'all',
-  'stylers': [{
-    'visibility': 'on',
-  },
-  {
-    'color': '#acbcc9',
-  },
-  ],
-},
-];
 
-// Escapes HTML characters in a template literal string, to prevent XSS.
-// See https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet#RULE_.231_-_HTML_Escape_Before_Inserting_Untrusted_Data_into_HTML_Element_Content
 function sanitizeHTML(strings) {
   const entities = {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', '\'': '&#39;'};
   let result = strings[0];
@@ -89,15 +11,11 @@ function sanitizeHTML(strings) {
   return result;
 }
 
-/**
- * Initialize the Google Map.
- */
 function initMap() {
   // Create the map.
   const map = new google.maps.Map(document.getElementById('map'), {
     zoom: 9,
     center: {lat: 51.5074, lng: 0.1278},
-    styles: mapStyle,
   });
 
   // Load the stores GeoJSON onto the map.
@@ -114,7 +32,7 @@ function initMap() {
     const phone = event.feature.getProperty('phone');
     const position = event.feature.getGeometry().get();
     const content = sanitizeHTML`
-      <div style="margin-left:220px; margin-bottom:20px;">
+      <div style="margin-bottom:20px;">
         <b>Name:</b> ${name}</p>
         <b>Phone:</b> ${phone}</p>
         <p><img src="https://maps.googleapis.com/maps/api/streetview?size=350x120&location=${position.lat()},${position.lng()}&key=${apiKey}"></p>

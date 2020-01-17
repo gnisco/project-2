@@ -144,8 +144,6 @@
             },
             "type": "Feature",
             "properties": {
-                "type": "Feature",
-            "properties": {
                 "make": "mercedes-benz",
                 "name": "Mercedes-Benz Croydon",
                 "phone": "020 8665 4540",
@@ -872,5 +870,5 @@
                 "storeid": "58"
             }
         }
-    }]
+    ]
 }
