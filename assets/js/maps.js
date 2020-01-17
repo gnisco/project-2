@@ -107,7 +107,7 @@ function initMap() {
   map.data.setStyle((feature) => {
     return {
       icon: {
-        url: `img/icon_${feature.getProperty('category')}.png`,
+        url: `assets/images/car-list/model-s.jpg`,
         scaledSize: new google.maps.Size(64, 64),
       },
     };
@@ -118,14 +118,12 @@ function initMap() {
 
   // Show the information for a store when its marker is clicked.
   map.data.addListener('click', (event) => {
-    const category = event.feature.getProperty('category');
+    const category = event.feature.getProperty('make');
     const name = event.feature.getProperty('name');
-    const description = event.feature.getProperty('description');
-    const hours = event.feature.getProperty('hours');
     const phone = event.feature.getProperty('phone');
     const position = event.feature.getGeometry().get();
     const content = sanitizeHTML`
-      <img style="float:left; width:200px; margin-top:30px" src="img/logo_${category}.png">
+      <img style="float:left; width:200px; margin-top:30px" src="assets/images/car-list/model-s.jpg">
       <div style="margin-left:220px; margin-bottom:20px;">
         <h2>${name}</h2><p>${description}</p>
         <p><b>Open:</b> ${hours}<br/><b>Phone:</b> ${phone}</p>

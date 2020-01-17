@@ -3,225 +3,395 @@
     "features": [{
             "geometry": {
                 "type": "Point",
-                "coordinates": [-0.1428115,
-                    51.5125168
+                "coordinates": [-0.301881,
+                    51.492067
                 ]
             },
             "type": "Feature",
             "properties": {
-                "category": "patisserie",
-                "hours": "10am - 6pm",
-                "description": "Modern twists on classic pastries. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Patisserie Mayfair",
-                "phone": "+44 20 1234 5678",
+                "make": "audi",
+                "name": "Audi West London",
+                "phone": "020 3553 3327",
                 "storeid": "01"
             }
         },
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-2.579623,
-                    51.452251
+                "coordinates": [-0.188286,
+                    51.548000
                 ]
             },
             "type": "Feature",
             "properties": {
-                "category": "patisserie",
-                "hours": "10am - 6pm",
-                "description": "Come and try our award-winning cakes and pastries. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Patisserie Bristol",
-                "phone": "+44 117 121 2121",
+                "make": "audi",
+                "name": "Audi Finchley Road",
+                "phone": "020 3733 0743",
                 "storeid": "02"
             }
         },
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    1.273459,
-                    52.638072
+                "coordinates": [-0.195085,
+                    51.415295
                 ]
             },
             "type": "Feature",
             "properties": {
-                "category": "patisserie",
-                "hours": "10am - 6pm",
-                "description": "Whatever the occasion, whether it's a birthday or a wedding, Josie's Patisserie has the perfect treat for you. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Patisserie Norwich",
-                "phone": "+44 1603 123456",
+               "make": "audi",
+               "name": "Audi Wimbledon",
+                "phone": "0844 939 6786",
                 "storeid": "03"
             }
         },
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-1.9912838,
-                    50.8000418
+                "coordinates": [-0.413454,
+                    51.373326
                 ]
             },
             "type": "Feature",
             "properties": {
-                "category": "patisserie",
-                "hours": "10am - 6pm",
-                "description": "A gourmet patisserie that will delight your senses. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Patisserie Wimborne",
-                "phone": "+44 1202 343434",
+                "make": "audi",
+                "name": "Audi Walton",
+                "phone": "01932 506785",
                 "storeid": "04"
             }
         },
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-2.985933,
-                    53.408899
+                "coordinates": [-0.176721,
+                    51.625289
                 ]
             },
             "type": "Feature",
             "properties": {
-                "category": "patisserie",
-                "hours": "10am - 6pm",
-                "description": "Spoil yourself or someone special with our classic pastries. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Patisserie Liverpool",
-                "phone": "+44 151 444 4444",
+                "make": "audi",
+                "name": "Audi Whetstone",
+                "phone": "020 3131 6115",
                 "storeid": "05"
             }
         },
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-1.689423,
-                    52.632469
+                "coordinates": [-0.367318,
+                    51.668044
                 ]
             },
             "type": "Feature",
             "properties": {
-                "category": "patisserie",
-                "hours": "10am - 6pm",
-                "description": "Come and feast your eyes and tastebuds on our delicious pastries and cakes. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Patisserie Tamworth",
-                "phone": "+44 5555 55555",
+                "make": "audi",
+                "name": "Audi Watford",
+                "phone": "01923 700215",
                 "storeid": "06"
             }
         },
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-3.155305,
-                    51.479756
+                "coordinates": [-0.167762,
+                    51.483776
                 ]
             },
             "type": "Feature",
             "properties": {
-                "category": "patisserie",
-                "hours": "10am - 6pm",
-                "description": "Josie's Patisserie is family-owned, and our delectable pastries, cakes, and great coffee are renowed. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Patisserie Cardiff",
-                "phone": "+44 29 6666 6666",
+                "make": "mercedes-benz",
+                "name": "Mercedes-Benz Chelsea",
+                "phone": "+44 207 3514000",
                 "storeid": "07"
             }
         },
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-0.725019,
-                    52.668891
+                "coordinates": [-0.199398,
+                    51.581130
                 ]
             },
             "type": "Feature",
             "properties": {
-                "category": "cafe",
-                "hours": "8am - 9:30pm",
-                "description": "Oakham's favorite spot for fresh coffee and delicious cakes. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Cafe Oakham",
-                "phone": "+44 7777 777777",
+                "make": "mercedes-benz",
+                "name": "Mercedes-Benz Temple Fortune",
+                "phone": "+44 20 8731 0200",
                 "storeid": "08"
             }
         },
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-2.477653,
-                    53.735405
+                "coordinates": [-0.293960,
+                    51.490851
                 ]
             },
             "type": "Feature",
             "properties": {
-                "category": "cafe",
-                "hours": "8am - 9:30pm",
-                "description": "Enjoy freshly brewed coffe, and home baked cakes in our homely cafe. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Cafe Blackburn",
-                "phone": "+44 8888 88888",
+                "make": "mercedes-benz",
+                "name": "Mercedes-Benz Brentford",
+                "phone": "020 8560 2151",
                 "storeid": "09"
             }
         },
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-0.211363,
-                    51.108966
+                "coordinates": [-0.121548,
+                    51.381457
                 ]
             },
             "type": "Feature",
             "properties": {
-                "category": "cafe",
-                "hours": "8am - 9:30pm",
-                "description": "A delicious array of pastries with many flavours, and fresh coffee in an snug cafe. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Cafe Crawley",
-                "phone": "+44 1010 101010",
+                "type": "Feature",
+            "properties": {
+                "make": "mercedes-benz",
+                "name": "Mercedes-Benz Croydon",
+                "phone": "020 8665 4540",
                 "storeid": "10"
             }
         },
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-0.123559,
-                    50.832679
+                "coordinates": [-0.019204,
+                    51.406689
                 ]
             },
             "type": "Feature",
             "properties": {
-                "category": "cafe",
-                "hours": "8am - 9:30pm",
-                "description": "Grab a freshly brewed coffee, a decadent cake and relax in our idyllic cafe. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Cafe Brighton",
-                "phone": "+44 1313 131313",
+                "make": "mercedes-benz",
+                "name": "Mercedes-Benz Bromley",
+                "phone": "020 8663 9800",
                 "storeid": "11"
             }
         },
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [-3.319575,
-                    52.517827
+                "coordinates": [-0.262385,
+                    51.595505
                 ]
             },
             "type": "Feature",
             "properties": {
-                "category": "cafe",
-                "hours": "8am - 9:30pm",
-                "description": "Come in and unwind at this idyllic cafe with fresh coffee and home made cakes. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Cafe Newtown",
-                "phone": "+44 1414 141414",
+                "make": "mercedes-benz",
+                "name": "Mercedes-Benz Collindale",
+                "phone": "020 8205 1212",
                 "storeid": "12"
             }
         },
         {
             "geometry": {
                 "type": "Point",
-                "coordinates": [
-                    1.158167,
-                    52.071634
+                "coordinates": [-0.221547,
+                    51.506831
                 ]
             },
             "type": "Feature",
             "properties": {
-                "category": "cafe",
-                "hours": "8am - 9:30pm",
-                "description": "Fresh coffee and delicious cakes in an snug cafe. We're part of a larger chain of patisseries and cafes.",
-                "name": "Josie's Cafe Ipswich",
-                "phone": "+44 1717 17171",
+                "make": "tesla",
+                "name": "Tesla Westfield",
+                "phone": "020 8740 6035",
                 "storeid": "13"
-            }
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.253206,
+                    51.487272
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "tesla",
+                "name": "Tesla Chiswick",
+                "phone": "020 3744 9898",
+                "storeid": "14"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.223734,
+                    51.576473
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "tesla",
+                "name": "Tesla Brent Cross",
+                "phone": "020 3514 6857",
+                "storeid": "15"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.460770,
+                    51.510769
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "tesla",
+                "name": "Tesla Heathrow",
+                "phone": "01895 714009",
+                "storeid": "16"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.271115,
+                    51.439596
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "tesla",
+                "name": "Tesla Bluewater",
+                "phone": "01322 643007",
+                "storeid": "17"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.005638,
+                    51.543372
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "hyundai",
+                "name": "Hyundai Stratford",
+                "phone": "020 3827 9768",
+                "storeid": "18"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.287136,
+                    51.468155
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "hyundai",
+                "name": "Hyundai Ken Brown",
+                "phone": "020 3846 8990",
+                "storeid": "19"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.153501,
+                    51.608012
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "hyundai",
+                "name": "Hyundai North London",
+                "phone": "020 8457 6660",
+                "storeid": "20"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.177800,
+                    51.468836
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "volkswagen",
+                "name": "Volkswagen Battersea",
+                "phone": "020 8031 0101",
+                "storeid": "21"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.062397,
+                    51.509205
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "volkswagen",
+                "name": "Volkswagen Alan Day (City)",
+                "phone": "020 3613 0273",
+                "storeid": "22"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [0.003498,
+                    51.417869
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "volkswagen",
+                "name": "Volkswagen Bromley",
+                "phone": "020 8131 7372",
+                "storeid": "23"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.286287,
+                    51.491474
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "volkswagen",
+                "name": "Volkswagen West London",
+                "phone": "020 8996 6600",
+                "storeid": "24"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.187436,
+                    51.547472
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "volkswagen",
+                "name": "Volkswagen Alan Day (Hampsted)",
+                "phone": "020 3553 5606",
+                "storeid": "25"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.395579,
+                    51.368497
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "volkswagen",
+                "name": "Volkswagen Walton on Thames",
+                "phone": "01932 642375",
+                "storeid": "26"
+            },
+            {
+            "geometry": {
+                "type": "Point",
+                "coordinates": [-0.395579,
+                    51.368497
+                ]
+            },
+            "type": "Feature",
+            "properties": {
+                "make": "volkswagen",
+                "name": "Volkswagen Loughton",
+                "phone": "01932 642375",
+                "storeid": "26"
+            },
         }
-    ]
+    }]
 }

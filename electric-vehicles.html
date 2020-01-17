@@ -44,28 +44,44 @@
                     <a class="sort" href="#" data-sort="range">Range</a>
                     <a class="sort" href="#" data-sort="price">Price</a>
                 </div>
-                <div class="tags">
-                <div>Filters:</div>
-                    <div class="tag filter" data-filter="1993"> </div>
-                    <div class="tag filter" data-filter="1994">'94 </div>
-                    <div class="tag filter" data-filter="1995">'95</div>
-                    <div class="tag filter" data-filter="1996">'96 </div>
-                </div>
-                <div class="list">
-                    <a target="_blank" class="list__item" href="https://www.audi.co.uk/electric-car/e-tron.html?sc_ppc=p1111531384&gclid=Cj0KCQiAjfvwBRCkARIsAIqSWlOpFs54hVqXR6UAmkKlZqReyzr17BxyMGFzZJBAKZrDyJ87QGTQOREaAs5tEALw_wcB">
-                        <div class="list-name">Audi e-tron</div>
-                        <div class="meta row">
-                            <div class="list-details col">
-                                <div class="range" value="237">Up to 237 mile Range</div>
-                                <div class="doors">5 doors</div>
-                                <div class="type">SUV</div>
-                                <div class="price" value="71560">Price from: £71,560</div>
+                <form>
+                    <select name="price" id="price">
+                        <option value="all">Select Price Range</option>
+                        <option value="<=25000">Under £30,000</option>
+                        <option value="30000 <= 60000">£30,000 - £60,000</option>
+                        <option value=">=60000">Over £60,000</option>
+                    </select>
+                    <select name="range" id="range">
+                        <option value="all">Select Range</option>
+                        <option value="100">Over 100 miles</option>
+                        <option value="200">Over 200 miles</option>
+                        <option value="300">Over 300 miles</option>
+                    </select>
+                    <select name="type" id=type>
+                        <option value="all">Select Type</option>
+                        <option value="Hatchback">Hatchback</option>
+                        <option value="Saloon">Saloon</option>
+                        <option value="SUV">SUV</option>
+                    </select>
+                </form>
+                <div class="car_list">
+                    <div class="list_item" id="list_item">
+                        <a target="_blank" class="list__item" href="https://www.audi.co.uk/electric-car/e-tron.html?sc_ppc=p1111531384&gclid=Cj0KCQiAjfvwBRCkARIsAIqSWlOpFs54hVqXR6UAmkKlZqReyzr17BxyMGFzZJBAKZrDyJ87QGTQOREaAs5tEALw_wcB">
+                            <div class="list-name">Audi e-tron</div>
+                            <div class="meta row">
+                                <div class="list-details col">
+                                    <div class="range" value="237">Up to 237 mile Range</div>
+                                    <div class="doors">5 doors</div>
+                                    <div class="type">SUV</div>
+                                    <div class="price" value="71560">Price from: £71,560</div>
+                                </div>
+                                <div class="col hidden-sm hidden-xs item-img list-img">
+                                    <img src="assets/images/car-list/Audi-e-Tron.jpg" alt="audi-e-tron">
+                                </div>
                             </div>
-                            <div class="col hidden-sm hidden-xs item-img list-img">
-                                <img src="assets/images/car-list/Audi-e-Tron.jpg" alt="audi-e-tron">
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
             

@@ -1,27 +1,61 @@
-var options = {
-  valueNames: [ 'car', 'range', 'doors', 'type', 'price' ]
-};
+/*function show_cars(){
+  var price = get price from ('assets/js/car_list.json');
+  var min_mileage = get min mileage from ('assets/js/car_list.json');
+  var type = get type from ('assets/js/car_list.json');
+  var list_of_cars_to_display = get_list_of_cars_to_display(price, min_mileage, type)
+  
+  var carListDiv = document.getElementById('list_item');
+  loop through list of cars to display:
+    car = current car
+    cardiv = document.CreateElement('div')
+    carListDiv.appendElement(cardiv)
 
-var values = [
-  {
-    car: 'Honda e',
-    range: 'The Lightning Seeds',
-    doors: 1992
-    type: '',
-    price: ''
-  },
-  {
-    car: 'Sense',
-    range: 'The Lightning Seeds',
-    doors: 1992
-    type: '',
-    price: ''
-  },
-  ... 
-];
+}
 
-var car-list = new List('car-list', options, values);
-car-list.sort("price", {
+function get_list_of_cars_to_display(price, min_mileage, type) {
+  var all_cars =  all cars in full_dataset
+  
+  cars_to_display = []
+
+  loop through full_dataset and:
+
+    car = current_object in list
+
+    price_correct = (price >= min_price and price <= max_price);
+    mileage_correct = (car.mileage == 'all' or >= min_mileage);
+    type_correct = (car.type == make or car.type == 'all');
+    
+
+    if make_correct and mileage_correct:
+      add car to cars_to_display
+
+    return cars_to_display
+
+}
+*/
+
+function myFunction() {
+  document.getElementById("car_list").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, range, type, price;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("car_list");
+  range = div.getElementsByClassName("range");
+  for (i == 'all'; i >= range.valueOf()) {
+    txtValue = range[i].number || a[i].innerText;
+    if (Value.indexOf(filter) == range or >= range) {
+      range[i].style.display = "";
+    } else {
+      range[i].style.display = "none";
+    }
+  }
+}
+
+var car_list = new List('car_list', range, price);
+car_list.sort("price", {
   order: "asc"
 })
 

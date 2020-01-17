@@ -357,7 +357,6 @@ button[type="submit"] {
 	 -webkit-font-smoothing: antialiased;
 	 text-rendering: optimizeLegibility;
 	 -moz-osx-font-smoothing: grayscale;
-	 font-feature-settings: 'liga';
 }
  .controls .sort.asc, .controls .sort.desc {
 	 color: #4C9BAF;
@@ -417,6 +416,7 @@ button[type="submit"] {
 
  #map {
    height: 300px;
+   min-width: 90%
  }
 
  /* Styling for autocomplete search bar */

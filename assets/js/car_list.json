@@ -1,0 +1,21 @@
+var options = {
+  valueNames: [ 'car', 'range', 'doors', 'type', 'price' ]
+};
+
+var values = [
+  {
+    car: 'Honda e',
+    range: '136',
+    doors: '5',
+    type: 'Hatchback',
+    price: '£26160'
+  },
+  {
+    car: '',
+    range: '',
+    doors: '',
+    type: '',
+    price: ''
+  },
+  ... 
+];
