@@ -7,7 +7,6 @@
  - [Description](#description)
  - [UX](#ux)
  - [Features](#features)
- - [Features](#features)
  - [Technologies Used](#technologies-used)
  - [Testing](#testing)
  - [Deployment](#deployment)
