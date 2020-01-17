@@ -72,7 +72,7 @@ function initMap() {
   // Make the search bar into a Places Autocomplete search bar and select
   // which detail fields should be returned about the place that
   // the user selects from the suggestions.
-  const autocomplete = new google.maps.places.Autocomplete(input, options);
+  const autocomplete = new google.maps.places.autocomplete(input, options);
 
   autocomplete.setFields(
       ['address_components', 'geometry', 'name']);
