@@ -101,7 +101,7 @@ function initMap() {
   });
 
   // Load the stores GeoJSON onto the map.
-  map.data.loadGeoJson('stores.json', {idPropertyName: 'storeid'});
+  map.data.loadGeoJson('assets/js/stores.json', {idPropertyName: 'storeid'});
 
 
   const apiKey = 'AIzaSyAqthnqqZil9T4Tpz-2y9S13JjASnjjHPg';

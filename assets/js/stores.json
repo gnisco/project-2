@@ -195,8 +195,9 @@
                 "name": "Tesla Westfield",
                 "phone": "020 8740 6035",
                 "storeid": "13"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.253206,
@@ -209,8 +210,9 @@
                 "name": "Tesla Chiswick",
                 "phone": "020 3744 9898",
                 "storeid": "14"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.223734,
@@ -223,8 +225,9 @@
                 "name": "Tesla Brent Cross",
                 "phone": "020 3514 6857",
                 "storeid": "15"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.460770,
@@ -237,8 +240,9 @@
                 "name": "Tesla Heathrow",
                 "phone": "01895 714009",
                 "storeid": "16"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [0.271115,
@@ -251,8 +255,9 @@
                 "name": "Tesla Bluewater",
                 "phone": "01322 643007",
                 "storeid": "17"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.005638,
@@ -265,8 +270,9 @@
                 "name": "Hyundai Stratford",
                 "phone": "020 3827 9768",
                 "storeid": "18"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.287136,
@@ -279,8 +285,9 @@
                 "name": "Hyundai Ken Brown",
                 "phone": "020 3846 8990",
                 "storeid": "19"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.153501,
@@ -293,8 +300,9 @@
                 "name": "Hyundai North London",
                 "phone": "020 8457 6660",
                 "storeid": "20"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.177800,
@@ -307,8 +315,9 @@
                 "name": "Volkswagen Battersea",
                 "phone": "020 8031 0101",
                 "storeid": "21"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.062397,
@@ -321,8 +330,9 @@
                 "name": "Volkswagen Alan Day (City)",
                 "phone": "020 3613 0273",
                 "storeid": "22"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [0.003498,
@@ -335,8 +345,9 @@
                 "name": "Volkswagen Bromley",
                 "phone": "020 8131 7372",
                 "storeid": "23"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.286287,
@@ -349,8 +360,9 @@
                 "name": "Volkswagen West London",
                 "phone": "020 8996 6600",
                 "storeid": "24"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.187436,
@@ -363,8 +375,9 @@
                 "name": "Volkswagen Alan Day (Hampsted)",
                 "phone": "020 3553 5606",
                 "storeid": "25"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.395579,
@@ -377,8 +390,9 @@
                 "name": "Volkswagen Walton on Thames",
                 "phone": "01932 642375",
                 "storeid": "26"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.395579,
@@ -391,8 +405,9 @@
                 "name": "Volkswagen Loughton",
                 "phone": "01932 642375",
                 "storeid": "27"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.395579,
@@ -405,8 +420,9 @@
                 "name": "Volkswagen Romford",
                 "phone": "01708 330540",
                 "storeid": "28"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.143686,
@@ -419,8 +435,9 @@
                 "name": "Jaguar Mayfair",
                 "phone": "020 7514 8330",
                 "storeid": "29"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.007382,
@@ -433,8 +450,9 @@
                 "name": "Jaguar Stratford",
                 "phone": "0330 088 8740",
                 "storeid": "30"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.233508,
@@ -447,8 +465,9 @@
                 "name": "Jaguar North West London",
                 "phone": "020 3985 8950",
                 "storeid": "31"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.278743,
@@ -461,8 +480,9 @@
                 "name": "Jaguar West London",
                 "phone": "020 8031 1934",
                 "storeid": "32"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [0.022677,
@@ -475,8 +495,9 @@
                 "name": "Jaguar Woodford",
                 "phone": "020 8031 2192",
                 "storeid": "33"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.198710,
@@ -489,8 +510,9 @@
                 "name": "Jaguar Barnet",
                 "phone": "020 8031 2087",
                 "storeid": "34"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [0.095139,
@@ -503,8 +525,9 @@
                 "name": "Jaguar Sidcup",
                 "phone": "020 8131 6830",
                 "storeid": "35"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.328540,
@@ -517,8 +540,9 @@
                 "name": "Jaguar Thames Ditton",
                 "phone": "020 8398 4222",
                 "storeid": "36"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.144555,
@@ -531,8 +555,9 @@
                 "name": "Jaguar Croydon",
                 "phone": "01737 742954",
                 "storeid": "37"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.384768,
@@ -545,8 +570,9 @@
                 "name": "Jaguar Watford",
                 "phone": "01923 701557",
                 "storeid": "38"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.288340,
@@ -559,8 +585,9 @@
                 "name": "Kia Brentford",
                 "phone": "01923 701557",
                 "storeid": "39"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.257026,
@@ -573,8 +600,9 @@
                 "name": "Kia Collindale",
                 "phone": "020 8200 2200",
                 "storeid": "40"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.018712,
@@ -587,8 +615,9 @@
                 "name": "Kia Bromley",
                 "phone": "020 8662 6133",
                 "storeid": "41"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [0.088425,
@@ -601,8 +630,9 @@
                 "name": "Kia Sidcup",
                 "phone": "020 8309 7788",
                 "storeid": "42"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.223494,
@@ -615,8 +645,9 @@
                 "name": "Seat Westfield",
                 "phone": "020 3597 7010",
                 "storeid": "43"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [0.032488,
@@ -629,8 +660,9 @@
                 "name": "Seat Bromley",
                 "phone": "0843 487 7831",
                 "storeid": "44"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [0.095928,
@@ -643,8 +675,9 @@
                 "name": "Seat Sidcup",
                 "phone": "020 8300 8311",
                 "storeid": "45"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [0.283252,
@@ -657,8 +690,9 @@
                 "name": "Seat Lakeside",
                 "phone": "01708 869698",
                 "storeid": "46"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [0.060013,
@@ -671,8 +705,9 @@
                 "name": "Vauxhall Woolwich",
                 "phone": "020 8854 8161",
                 "storeid": "47"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.032865,
@@ -685,8 +720,9 @@
                 "name": "Vauxhall Bristol Street Motors",
                 "phone": "020 3792 8874",
                 "storeid": "48"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.232069,
@@ -699,8 +735,9 @@
                 "name": "Vauxhall Staples Corner",
                 "phone": "020 8604 1071",
                 "storeid": "49"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.186816,
@@ -713,8 +750,9 @@
                 "name": "Vauxhall Wimbledon",
                 "phone": "020 3747 2956",
                 "storeid": "50"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.048950,
@@ -727,8 +765,9 @@
                 "name": "Vauxhall Beckenham",
                 "phone": "020 8308 4376",
                 "storeid": "51"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.277903,
@@ -741,8 +780,9 @@
                 "name": "Renault West London",
                 "phone": "020 3199 1166",
                 "storeid": "52"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.038267,
@@ -755,8 +795,9 @@
                 "name": "Renault Beckenham",
                 "phone": "020 8650 9151",
                 "storeid": "53"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.055995,
@@ -769,8 +810,9 @@
                 "name": "Renault Enfield",
                 "phone": "020 3199 1165",
                 "storeid": "54"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [0.088612,
@@ -783,8 +825,9 @@
                 "name": "Renault Orpington",
                 "phone": "01689 473392",
                 "storeid": "55"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.261031,
@@ -797,8 +840,9 @@
                 "name": "Renault Wilsons",
                 "phone": "01372 736000",
                 "storeid": "56"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [-0.139742,
@@ -811,8 +855,9 @@
                 "name": "Renault Croydon",
                 "phone": "020 3199 1164",
                 "storeid": "57"
-            },
-            {
+            }
+        },
+        {
             "geometry": {
                 "type": "Point",
                 "coordinates": [0.216239,
@@ -825,7 +870,7 @@
                 "name": "Renault Romford",
                 "phone": "01708 241081",
                 "storeid": "58"
-            },
+            }
         }
     }]
 }
