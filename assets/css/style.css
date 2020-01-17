@@ -415,8 +415,9 @@ button[type="submit"] {
 /*--------------------------------------------Map*/
 
  #map {
-   height: 300px;
-   min-width: 90%
+   height: 400px;
+   width: 100%;
+   display: center;
  }
 
  /* Styling for autocomplete search bar */

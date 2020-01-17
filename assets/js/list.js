@@ -1,3 +1,48 @@
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("list_item");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var typeContainer = document.getElementById("typeContainer");
+var typeFilter = typeContainer.getElementsByClassName("typeFilter");
+for (var i = 0; i < typeFilter.length; i++) {
+  typeFilter[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+} 
+
+
 /*function show_cars(){
   var price = get price from ('assets/js/car_list.json');
   var min_mileage = get min mileage from ('assets/js/car_list.json');
@@ -32,7 +77,7 @@ function get_list_of_cars_to_display(price, min_mileage, type) {
     return cars_to_display
 
 }
-*/
+
 
 
 
@@ -50,7 +95,7 @@ document.getElementById("type")
   })
 
 function show_cars() {
-  var car_list_filters 
+  const car_list = 
 }
 
 function myFunction() {
@@ -60,7 +105,6 @@ function myFunction() {
 
 
 
-/*
 
 function filterFunction() {
   var input, filter, range, type, price;
@@ -80,128 +124,3 @@ function filterFunction() {
 */
 
 
-
- 
-$.fn.listfilter = function(options) {
-  options = $.extend(true, $.fn.listfilter.defaultOptions, options);
- 
-  return this.each(function() {
-    if($(this).hasClass('car_list-processed')) {
-      refreshFilters(this);
-      return;
-    }
-    var table = $(this);
-    var start = new Date();
- 
-    $('th:visible', table).each(function(index) {
-      if($(this).hasClass('skip-filter')) return;
-      var selectbox = $('<select class="form-control">');
-      var values = [];
-      var opts = [];
-      selectbox.append('<option value="--all--">' + $(this).text() + '</option>');
- 
-      var col = $('tr:not(.skip-filter) td:nth-child(' + (index + 1) + ')', table).each(function() {
-        var cellVal = options.valueCallback.apply(this);
-        if(cellVal.length == 0) {
-          cellVal = '--empty--';
-        }
-        $(this).attr('ddtf-value', cellVal);
- 
-        if($.inArray(cellVal, values) === -1) {
-          var cellText = options.textCallback.apply(this);
-          if(cellText.length == 0) {cellText = options.emptyText;}
-          values.push(cellVal);
-          opts.push({val:cellVal, text:cellText});
-        }
-      });
-      if(opts.length < options.minOptions){
-        return;
-      }
-      if(options.sortOpt) {
-        opts.sort(options.sortOptCallback);
-      }
-      $.each(opts, function() {
-        $(selectbox).append('<option value="' + this.val + '">' + this.text + '</option>')
-      });
- 
-      $(this).wrapInner('<div style="display:none">');
-      $(this).append(selectbox);
- 
-      selectbox.bind('change', {column:col}, function(event) {
-        var changeStart = new Date();
-        var value = $(this).val();
- 
-        event.data.column.each(function() {
-          if($(this).attr('ddtf-value') === value || value == '--all--') {
-            $(this).removeClass('car_list-filtered');
-          }
-          else {
-            $(this).addClass('car_list-filtered');
-          }
-        });
-        var changeStop = new Date();
-        if(options.debug) {
-          console.log('Search: ' + (changeStop.getTime() - changeStart.getTime()) + 'ms');
-        }
-        refreshFilters(table);
- 
-      });
-      table.addClass('ddtf-processed');
-      if($.isFunction(options.afterBuild)) {
-        options.afterBuild.apply(table);
-      }
-    });
- 
-    function refreshFilters(table) {
-      var refreshStart = new Date();
-      $('tr', table).each(function() {
-        var row = $(this);
-        if($('td.ddtf-filtered', row).length > 0) {
-          options.transition.hide.apply(row, options.transition.options);
-        }
-        else {
-          options.transition.show.apply(row, options.transition.options);
-        }
-      });
- 
-      if($.isFunction(options.afterFilter)) {
-        options.afterFilter.apply(table);
-      }
- 
-      if(options.debug) {
-        var refreshEnd = new Date();
-        console.log('Refresh: ' + (refreshEnd.getTime() - refreshStart.getTime()) + 'ms');
-      }
-    }
- 
-    if(options.debug) {
-      var stop = new Date();
-      console.log('Build: ' + (stop.getTime() - start.getTime()) + 'ms');
-    }
-  });
-};
- 
-$.fn.ddTableFilter.defaultOptions = {
-  valueCallback:function() {
-    return encodeURIComponent($.trim($(this).text()));
-  },
-  textCallback:function() {
-    return $.trim($(this).text());
-  },
-  sortOptCallback: function(a, b) {
-    return a.text.toLowerCase() > b.text.toLowerCase();
-  },
-  afterFilter: null,
-  afterBuild: null,
-  transition: {
-    hide:$.fn.hide,
-    show:$.fn.show,
-    options: []
-  },
-  emptyText:'--Empty--',
-  sortOpt:true,
-  debug:false,
-  minOptions:2
-}
- 
-})(jQuery);
