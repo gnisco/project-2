@@ -41,12 +41,12 @@ User stories:
 
  - Contact form is implemented to allow users to reach out with any questions they have about buying a EV.
  - A map is implemeneted with pins showing all the car dealers in and around the area of London.
- - List of EV with filterable search to help users find the right EV that matches their needs.
+ - List of EV to help users find the right EV that matches their needs.
 
 ### Feaatures left to impend
 
 Unfortunately I was unable to add a feature to search for a location and find the closest showroom to the entered location as well as driving instructions for the user, however this could be added in easily in the future.
-
+The filters also are not currently functioning and could be made useable in the future.
 ---
 
 ## Technologies Used
@@ -68,10 +68,6 @@ Contact form: - Go to the "Contact Us" page.
               - Try to submit the form with an invalid email address and verify that a relevant error message appears.
               - Try to submit the form with all inputs valid and verify that a success message appears.
 
-List Filters: - Go to the "Electric Vehicles" page.
-              - Select price filter and ensure only items with selected price range show.
-              - Select type filter and ensure only items with selected typ show.
-              - Select Range filter and ensure only items with selected mile range show.
 
 Map: - Go to the "Find your Dealers" page.
      - Check map controls work.
