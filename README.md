@@ -45,8 +45,8 @@ User stories:
 
 ### Feaatures left to impend
 
-Unfortunately I was unable to add a feature to search for a location and find the closest showroom to the entered location as well as driving instructions for the user, however this could be added in easily in the future.
-The filters also are not currently functioning and could be made useable in the future.
+ - Unfortunately I was unable to add a feature to search for a location and find the closest showroom to the entered location as well as driving instructions for the user, however this could be added in easily in the future.
+ - The filters also are not currently functioning and could be made useable in the future.
 ---
 
 ## Technologies Used
