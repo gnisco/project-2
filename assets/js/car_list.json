@@ -1,21 +1,139 @@
-var options = {
-  valueNames: [ 'car', 'range', 'doors', 'type', 'price' ]
-};
+[
+  {
+    "car": "Audi e-tron",
+    "range": "237",
+    "doors": "5",
+    "type": "SUV",
+    "price": "71560",
+    "link": "https://www.audi.co.uk/electric-car/e-tron.html?sc_ppc=p1111531384&gclid=Cj0KCQiAjfvwBRCkARIsAIqSWlOpFs54hVqXR6UAmkKlZqReyzr17BxyMGFzZJBAKZrDyJ87QGTQOREaAs5tEALw_wcB",
+    "image": "assets/images/car-list/Audi-e-Tron.jpg"
+  },
+  {
+    "car": "Honda e",
+    "range": "136",
+    "doors": "5",
+    "type": "Hatchback",
+    "price": "26160",
+    "link": "https://www.honda.co.uk/cars/new/honda-e/overview.html?gclid=Cj0KCQiA04XxBRD5ARIsAGFygj8aHA31yDHiufLaQ2YNiyfoQhnz2ItmGfO26xHsN4wtcK81Mfr1-gkaAofQEALw_wcB&gclsrc=aw.ds",
+    "image": "assets/images/car-list/honda-e.jpg"
+  },
+  {
+    "car": "Hyundai Kona Electric",
+    "range": "278",
+    "doors": "5",
+    "type": "SUV",
+    "price": "35100",
+    "link": "https://www.hyundai.co.uk/new-cars/kona-electric",
+    "image": "assets/images/car-list/kona-ev.jpg"
+  },
+  {
+    "car": "Jaguar I-Pace",
+    "range": "292",
+    "doors": "5",
+    "type": "SUV",
+    "price": "60995",
+    "link": "https://www.jaguar.co.uk/jaguar-range/i-pace/index.html",
+    "image": "assets/images/car-list/jaguar-i-pace.jpg"
+  },
+  {
+    "car": "Kia e-Niro",
+    "range": "282",
+    "doors": "5",
+    "type": "SUV",
+    "price": "34495",
+    "link": "https://www.kia.com/uk/new-cars/e-niro/?cmpid=ppc%7cKia_GBR_BRD_DFD_EXT_STD_MOD_-_Niro_KML_Google%7cgoogle%7ce%7ckia%20e-niro&&cmpid=ppc%7cKia_GBR_BRD_DFD_EXT_STD_MOD_-_Niro_KML_Google%7cgoogle%7ce%7ckia%20e-niro&gclid=Cj0KCQiA04XxBRD5ARIsAGFygj8LfIoYzq96RM6Mc9Bls_-Xhz9kasOhI1YxjaMWrl8HqWsL4TRl1LYaAlS9EALw_wcB&gclsrc=aw.ds",
+    "image": "assets/images/car-list/Kia-e-Niro.jpg"
+  },
+  {
+    "car": "Mercedes-Benz EQC",
+    "range": "228",
+    "doors": "5",
+    "type": "SUV",
+    "price": "65720",
+    "link": "https://www.mercedes-benz.co.uk/passengercars/mercedes-benz-cars/models/eqc/explore.html",
+    "image": "assets/images/car-list/mb-eqc.jpg"
+  },
+  {
+    "car": "Renault Zoe",
+    "range": "245",
+    "doors": "5",
+    "type": "Hatchback",
+    "price": "25670",
+    "link": "https://www.hendy.co.uk/renault/new-cars/new-zoe/",
+    "image": "assets/images/car-list/Renault_Zoe.jpg"
+  },
+  {
+    "car": "Seat MII",
+    "range": "160",
+    "doors": "5",
+    "type": "Hatchback",
+    "price": "22800",
+    "link": "https://www.seat.co.uk/new-cars/mii-electric/overview.html",
+    "image": "assets/images/car-list/SEAT_eMii.jpg"
+  },
+  {
+    "car": "Smart EQ fortwo",
+    "range": "70",
+    "doors": "3",
+    "type": "Hatchback",
+    "price": "20840",
+    "link": "https://www.mercedes-benzretailgroup.co.uk/smart/eq-fortwo/",
+    "image": "assets/images/car-list/smart-eq-for2.jpg"
+  },
+  {
+    "car": "Smart EQ forfour",
+    "range": "70",
+    "doors": "5",
+    "type": "Hatchback",
+    "price": "20785",
+    "link": "https://www.mercedes-benzretailgroup.co.uk/smart/eq-forfour/",
+    "image": "assets/images/car-list/smart-forfour-eq.jpg"
+  },
+  {
+    "car": "Tesla model 3",
+    "range": "360",
+    "doors": "4",
+    "type": "Saloon",
+    "price": "40990",
+    "link": "https://www.tesla.com/en_gb/model3",
+    "image": "assets/images/car-list/Tesla_Model_3.jpg"
+  },
+  {
+    "car": "Tesla model s",
+    "range": "390",
+    "doors": "4",
+    "type": "Saloon",
+    "price": "83980",
+    "link": "https://www.tesla.com/en_gb/models",
+    "image": "assets/images/car-list/model-s.jpg"  
+  },
+  {
+    "car": "Tesla model s",
+    "range": "340",
+    "doors": "5",
+    "type": "SUV",
+    "price": "90980",
+    "link": "https://www.tesla.com/en_gb/modelx",
+    "image": "assets/images/car-list/model-x.jpg"
+  },
+  {
+    "car": "Vauxhall Corsa e",
+    "range": "209",
+    "doors": "5",
+    "type": "Hatchback",
+    "price": "27140",
+    "link": "https://www.vauxhall.co.uk/cars/new-corsa/electric.html",
+    "image": "assets/images/car-list/Corsa-e.jpg"
+  },
+  {
+    "car": "Volkswagen ID.3",
+    "range": "263",
+    "doors": "5",
+    "type": "Hatchback",
+    "price": "30870",
+    "link": "https://www.volkswagen.co.uk/electric/electric-cars/id3.html",
+    "image": "assets/images/car-list/Corsa-e.jpg"
+  }
+  
+]
 
-var values = [
-  {
-    car: 'Honda e',
-    range: '136',
-    doors: '5',
-    type: 'Hatchback',
-    price: '£26160'
-  },
-  {
-    car: '',
-    range: '',
-    doors: '',
-    type: '',
-    price: ''
-  },
-  ... 
-];

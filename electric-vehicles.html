@@ -44,37 +44,40 @@
                 </div>
                 <form>
                     <select name="priceContainer" id="price">
-                        <option class="priceFilter active" value="all">Select Price Range</option>
-                        <option class="priceFilter" value="<=30000">Under £30,000</option>
-                        <option class="priceFilter" value="30000 <= 60000">£30,000 - £60,000</option>
-                        <option class="priceFilter" value=">=60000">Over £60,000</option>
+                        <option class="priceFilter active" onclick="filterSelection('all')">Select Price Range</option>
+                        <option class="priceFilter" onclick="filterSelection('<=30000')">Under £30,000</option>
+                        <option class="priceFilter" onclick="filterSelection('30000 <= 60000')">£30,000 - £60,000</option>
+                        <option class="priceFilter" onclick="filterSelection('>=60000')">Over £60,000</option>
                     </select>
                     <select name="rangeContainer" id="range">
-                        <option class ="rangeFilter active" value="all">Select Mile Range</option>
-                        <option class ="rangeFilter" value="100">Over 100 miles</option>
-                        <option class ="rangeFilter" value="200">Over 200 miles</option>
-                        <option class ="rangeFilter" value="300">Over 300 miles</option>
+                        <option class ="rangeFilter active" onclick="filterSelection('all')">Select Mile Range</option>
+                        <option class ="rangeFilter" onclick="filterSelection('>=100')">Over 100 miles</option>
+                        <option class ="rangeFilter" onclick="filterSelection('>=200')">Over 200 miles</option>
+                        <option class ="rangeFilter" onclick="filterSelection('>=300')">Over 300 miles</option>
                     </select>
-                    <select name="typeContainer" id="typeContainer">
-                        <option class ="typeFilter active" onclick="filterSelection('all')">Select Type</option>
-                        <option class ="typeFilter" onclick="filterSelection('Hatchback')">Hatchback</option>
-                        <option class ="typeFilter" onclick="filterSelection('Saloon')">Saloon</option>
-                        <option class ="typeFilter" onclick="filterSelection('SUV')">SUV</option>
-                    </select>
+                    <div class="typeContainer">
+                        <select name="typeContainer" id="typeContainer">
+                            <option class ="typeFilter active" onclick="filterSelection('all')">Select Type</option>
+                            <option class ="typeFilter" onclick="filterSelection('Hatchback')">Hatchback</option>
+                            <option class ="typeFilter" onclick="filterSelection('Saloon')">Saloon</option>
+                            <option class ="typeFilter" onclick="filterSelection('SUV')">SUV</option>
+                        </select>
+                    </div>
+                    
                 </form>
                 <div class="car_list">
                     <div class="list_item SUV" id="list_item">
                         <a target="_blank" class="list__item" href="https://www.audi.co.uk/electric-car/e-tron.html?sc_ppc=p1111531384&gclid=Cj0KCQiAjfvwBRCkARIsAIqSWlOpFs54hVqXR6UAmkKlZqReyzr17BxyMGFzZJBAKZrDyJ87QGTQOREaAs5tEALw_wcB">
-                            <div class="list-name">Audi e-tron</div>
+                            <div class="list-name car"></div>
                             <div class="meta row">
                                 <div class="list-details col">
-                                    <div class="range" value="237">Up to 237 mile Range</div>
-                                    <div class="doors">5 doors</div>
-                                    <div class="type">SUV</div>
-                                    <div class="price" value="71560">Price from: £71,560</div>
+                                    <div class="range">Up to <span id="range"></span> mile Range</div>
+                                    <div class="doors"><span id="doors"></span> doors</div>
+                                    <div class="type"></div>
+                                    <div class="price" value="71560">Price from: £<span id="price"></span></div>
                                 </div>
-                                <div class="col hidden-sm hidden-xs item-img list-img">
-                                    <img src="assets/images/car-list/Audi-e-Tron.jpg" alt="audi-e-tron">
+                                <div class="col hidden-sm hidden-xs item-img image">
+                                    
                                 </div>
                             </div>
                         </a>
@@ -87,7 +90,7 @@
                                     <div class="range" value="136">Up to 136 mile Range</div>
                                     <div class="doors">5 doors</div>
                                     <div class="type">Hatchback</div>
-                                    <div class="price" value="26160">Price from: £26,160</div>
+                                    <div class="priceFilter" value="26160">Price from: £26,160</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/honda-e.jpg" alt="honda-e">
@@ -103,7 +106,7 @@
                                     <div class="range" value="278">Up to 278 mile Range</div>
                                     <div class="doors">5 doors</div>
                                     <div class="type">SUV</div>
-                                    <div class="price" value="35100">Price from: £35,100</div>
+                                    <div class="priceFilter" value="35100">Price from: £35,100</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/kona-ev.jpg" alt="kona-ev">
@@ -119,7 +122,7 @@
                                     <div class="range" value="292">Up to 292 mile Range</div>
                                     <div class="doors">5 doors</div>
                                     <div class="type">SUV</div>
-                                    <div class="price" value="60995">Price from: £60,995</div>
+                                    <div class="priceFilter" value="60995">Price from: £60,995</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/jaguar-i-pace.jpg" alt="jaguar-i-pace">
@@ -135,7 +138,7 @@
                                     <div class="range" value="282">Up to 282 mile Range</div>
                                     <div class="doors">5 doors</div>
                                     <div class="type">SUV</div>
-                                    <div class="price" value="34495">Price from: £34,495</div>
+                                    <div class="priceFilter" value="34495">Price from: £34,495</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/Kia-e-Niro.jpg" alt="kia-e-Niro">
@@ -151,7 +154,7 @@
                                     <div class="range" value="228">Up to 228 mile Range</div>
                                     <div class="doors">5 doors</div>
                                     <div class="type">SUV</div>
-                                    <div class="price" value="65720">Price from: £65,720</div>
+                                    <div class="priceFilter" value="65720">Price from: £65,720</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/mb-eqc.jpg" alt="mb-eqc">
@@ -160,14 +163,14 @@
                         </a>
                     </div>
                     <div class="list_item Hatchback" id="list_item">
-                        <a target="_blank" class="list__item" href="https://www.mercedes-benz.co.uk/passengercars/mercedes-benz-cars/models/eqc/explore.html">
+                        <a target="_blank" class="list__item" href="https://www.hendy.co.uk/renault/new-cars/new-zoe/">
                             <div class="list-name">Renault Zoe</div>
                             <div class="meta row">
                                 <div class="list-details col">
                                     <div class="range" value="245">Up to 245 mile Range</div>
                                     <div class="doors">5 doors</div>
                                     <div class="type">Hatchback</div>
-                                    <div class="price" value="25670">Price from: £25,670</div>
+                                    <div class="priceFilter" value="25670">Price from: £25,670</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/Renault_Zoe.jpg" alt="renault-zoe">
@@ -183,7 +186,7 @@
                                     <div class="range" value="160">Up to 160 mile Range</div>
                                     <div class="doors">5 doors</div>
                                     <div class="type">Hatchback</div>
-                                    <div class="price" value="22800">Price from: £22,800</div>
+                                    <div class="priceFilter" value="22800">Price from: £22,800</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/SEAT_eMii.jpg" alt="seat-mii">
@@ -192,14 +195,14 @@
                         </a>
                     </div>
                     <div class="list_item Hatchback" id="list_item">
-                        <a target="_blank" class="list__item" href="https://www.seat.co.uk/new-cars/mii-electric/overview.html">
+                        <a target="_blank" class="list__item" href="https://www.mercedes-benzretailgroup.co.uk/smart/eq-fortwo/">
                             <div class="list-name">Smart EQ ForTwo</div>
                             <div class="meta row">
                                 <div class="list-details col">
                                     <div class="range" value="70">Up to 70 mile Range</div>
                                     <div class="doors">3 doors</div>
                                     <div class="type">Hatchback</div>
-                                    <div class="price" value="20840">Price from: £20,840</div>
+                                    <div class="priceFilter" value="20840">Price from: £20,840</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/smart-eq-for2.jpg" alt="samrt-eq-for2">
@@ -208,14 +211,14 @@
                         </a>
                     </div>
                     <div class="list_item Hatchback" id="list_item">
-                        <a target="_blank" class="list__item" href="https://www.seat.co.uk/new-cars/mii-electric/overview.html">
+                        <a target="_blank" class="list__item" href="https://www.mercedes-benzretailgroup.co.uk/smart/eq-forfour/">
                             <div class="list-name">Smart EQ ForFour</div>
                             <div class="meta row">
                                 <div class="list-details col">
                                     <div class="range" value="70">Up to 70 mile Range</div>
                                     <div class="doors">5 doors</div>
                                     <div class="type">Hatchback</div>
-                                    <div class="price" value="20785">Price from: £20,785</div>
+                                    <div class="priceFilter" value="20785">Price from: £20,785</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/smart-forfour-eq.jpg" alt="samrt-eq-for4">
@@ -224,14 +227,14 @@
                         </a>
                     </div>
                     <div class="list_item Saloon" id="list_item">
-                        <a target="_blank" class="list__item" href="https://www.seat.co.uk/new-cars/mii-electric/overview.html">
+                        <a target="_blank" class="list__item" href="https://www.tesla.com/en_gb/model3">
                             <div class="list-name">Tesla Model 3</div>
                             <div class="meta row">
                                 <div class="list-details col">
-                                    <div class="range" value="348">Up to 348 mile Range</div>
-                                    <div class="doors">5 doors</div>
+                                    <div class="range" value="360">Up to 360 mile Range</div>
+                                    <div class="doors">4 doors</div>
                                     <div class="type">Saloon</div>
-                                    <div class="price" value="31315">Price from: £38,500</div>
+                                    <div class="priceFilter" value="40990">Price from: £40,990</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/Tesla_Model_3.jpg" alt="model-3">
@@ -240,14 +243,14 @@
                         </a>
                     </div>
                     <div class="list_item Saloon" id="list_item">
-                        <a target="_blank" class="list__item" href="https://www.seat.co.uk/new-cars/mii-electric/overview.html">
+                        <a target="_blank" class="list__item" href="https://www.tesla.com/en_gb/models">
                             <div class="list-name">Tesla Model S</div>
                             <div class="meta row">
                                 <div class="list-details col">
-                                    <div class="range" value="379">Up to 379 mile Range</div>
-                                    <div class="doors">5 doors</div>
+                                    <div class="range" value="390">Up to 390 mile Range</div>
+                                    <div class="doors">4 doors</div>
                                     <div class="type">Saloon</div>
-                                    <div class="price" value="77700">Price from: £77,700</div>
+                                    <div class="priceFilter" value="83980">Price from: £83,980</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/model-s.jpg" alt="model-s">
@@ -256,14 +259,14 @@
                         </a>
                     </div>
                     <div class="list_item SUV" id="list_item">
-                        <a target="_blank" class="list__item" href="https://www.seat.co.uk/new-cars/mii-electric/overview.html">
+                        <a target="_blank" class="list__item" href="https://www.tesla.com/en_gb/modelx">
                             <div class="list-name">Tesla Model X</div>
                             <div class="meta row">
                                 <div class="list-details col">
-                                    <div class="range" value="314">Up to 314 mile Range</div>
+                                    <div class="range" value="340">Up to 340 mile Range</div>
                                     <div class="doors">5 doors</div>
-                                    <div class="type">Saloon</div>
-                                    <div class="price" value="82700">Price from: £82,700</div>
+                                    <div class="type">SUV</div>
+                                    <div class="priceFilter" value="90980">Price from: £90,980</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/model-x.jpg" alt="model-x">
@@ -272,14 +275,14 @@
                         </a>
                     </div>
                     <div class="list_item Hatchback" id="list_item">
-                        <a target="_blank" class="list__item" href="https://www.seat.co.uk/new-cars/mii-electric/overview.html">
+                        <a target="_blank" class="list__item" href="https://www.vauxhall.co.uk/cars/new-corsa/electric.html">
                             <div class="list-name">Vauxhall Corsa e</div>
                             <div class="meta row">
                                 <div class="list-details col">
                                     <div class="range" value="209">Up to 209 mile Range</div>
                                     <div class="doors">5 doors</div>
                                     <div class="type">Hatchback</div>
-                                    <div class="price" value="31315">Price from: £31,315</div>
+                                    <div class="priceFilter" value="27140">Price from: £27,140</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/Corsa-e.jpg" alt="Corsa-e">
@@ -288,14 +291,14 @@
                         </a>
                     </div>
                     <div class="list_item Hatchback" id="list_item">
-                        <a target="_blank" class="list__item" href="https://www.seat.co.uk/new-cars/mii-electric/overview.html">
-                            <div class="list-name">Volkswagen Golf e</div>
+                        <a target="_blank" class="list__item" href="https://www.volkswagen.co.uk/electric/electric-cars/id3.html">
+                            <div class="list-name">Volkswagen ID.3</div>
                             <div class="meta row">
                                 <div class="list-details col">
-                                    <div class="range" value="209">Up to 209 mile Range</div>
+                                    <div class="range" value="263">Up to 263 mile Range</div>
                                     <div class="doors">5 doors</div>
                                     <div class="type">Hatchback</div>
-                                    <div class="price" value="31315">Price from: £31,315</div>
+                                    <div class="priceFilter" value="30870">Price from: £30,870</div>
                                 </div>
                                 <div class="col hidden-sm hidden-xs item-img list-img">
                                     <img src="assets/images/car-list/Corsa-e.jpg" alt="Corsa-e">
@@ -341,6 +344,6 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
-    <script src="assets/js/list.js"></script>
+    <script src="assets/js/filter.js"></script>
 </body>
 </html>
