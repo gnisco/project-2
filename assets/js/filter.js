@@ -1,30 +1,38 @@
-function show_cars() {
-    .getJSON('car_list.json', function (data) {
-        $.each(data.car_list, function (i, f) {
-            car_list.push([f.car, f.range, f.doors, f.type, f.price]);
+function showCars() {
+    $.getJSON('/assets/js/carList.json', function (data) {
+        console.log(data);
+        $.each(data.car_list, function (key, Value) {
+            var Value = eval('/assets/js/carList.json');
+            console.log(key);
+            console.log(value);
 
-            var link = document.getElementById('car_link');
-            link.innerHTML = ;
-            var car = document.getElementById('car');
-            car.innerHTML = ;
-            var range = document.getElementById('range');
-            range.innerHTML = ;
-            var doors = document.getElementById('doors');
-            doors.innerHTML = ;
-            var type = document.getElementById('type');
-            type.innerHTML = ;
-            var price = document.getElementById('price');
-            price.innerHTML = ;
-            var image = document.getElementById('car_image');
-            image.innerHTML = ;
-        }
-    };
-    $('a').on('click', addContent);
+                document.getElementById('car_link').innerHTML = Value.link;
+
+                document.getElementById('car').innerHTML = Value.car;
+                
+                document.getElementById('range').innerHTML = Value.range;
+                
+                document.getElementById('doors').innerHTML = Value.doors;
+                
+                document.getElementById('type').innerHTML = Value.type;
+                
+                document.getElementById('price').innerHTML = Value.price;
+                
+                document.getElementById('car_image').innerHTML = Value.image;          
+
+            
+            
+        });
+    });
 };
+showCars();
 
 
+/*  
+car_list.push([value.car, value.range, value.doors, value.type, value.price, value.car_link, value.car_image]);
+ $('a').on('click', addContent);
 
-/*  var min_mileage = get range from ('assets/js/car_list.json');
+var min_mileage = get range from ('assets/js/car_list.json');
  var type = get type from ('assets/js/car_list.json');
  var list_of_cars_to_display = get_list_of_cars_to_display(price, range, type)
 
@@ -100,6 +108,4 @@ function filterFunction() {
      }
  }
 }
-* /
-
-
+*/
