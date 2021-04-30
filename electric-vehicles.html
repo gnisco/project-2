@@ -46,13 +46,13 @@
                     <a class="sort" href="#" data-sort="price">Price</a>
                 </div>
                 <form>
-                    <select name="priceContainer" id="price">
+                    <select name="priceContainer">
                         <option class="priceFilter active" onclick="filterSelection('all')">Select Price Range</option>
                         <option class="priceFilter" onclick="filterSelection('<=30000')">Under £30,000</option>
                         <option class="priceFilter" onclick="filterSelection('30000 <= 60000')">£30,000 - £60,000</option>
                         <option class="priceFilter" onclick="filterSelection('>=60000')">Over £60,000</option>
                     </select>
-                    <select name="rangeContainer" id="range">
+                    <select name="rangeContainer">
                         <option class ="rangeFilter active" onclick="filterSelection('all')">Select Mile Range</option>
                         <option class ="rangeFilter" onclick="filterSelection('>=100')">Over 100 miles</option>
                         <option class ="rangeFilter" onclick="filterSelection('>=200')">Over 200 miles</option>
@@ -74,10 +74,10 @@
                             <div class="list-name"><span id="car"></span></div>
                             <div class="meta row">
                                 <div class="list-details col">
-                                    <div class="range">Up to <span id="range"></span> mile Range</div>
-                                    <div class="doors"><span id="doors"></span> doors</div>
+                                    <div class="range"><span id="range"></span></div>
+                                    <div class="doors"><span id="doors"></span></div>
                                     <div class="type"><span id="type"></span></div>
-                                    <div class="price">Price from: £<span id="price"></span></div>
+                                    <div class="price"><span id="price"></span></div>
                                 </div>
                                 <div class="col item-img image">
                                     <img id="car_image" src="#">

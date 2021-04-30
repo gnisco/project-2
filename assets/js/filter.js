@@ -1,24 +1,24 @@
 function showCars() {
     $.getJSON('/assets/js/carList.json', function (data) {
-        console.log(data);
-        $.each(data.car_list, function (key, Value) {
-            var Value = eval('/assets/js/carList.json');
-            console.log(key);
-            console.log(value);
+        $.each(data, function (i, item) {
+            console.log(data[i].car)
+                range = document.getElementById('range');
 
-                document.getElementById('car_link').innerHTML = Value.link;
+                console.log(range);
 
-                document.getElementById('car').innerHTML = Value.car;
+                document.getElementById('car').innerHTML = data[i].car;
                 
-                document.getElementById('range').innerHTML = Value.range;
+                document.getElementById('range').innerHTML = `<span>Up to ${data[i].range} mile range</span>`;
                 
-                document.getElementById('doors').innerHTML = Value.doors;
+                document.getElementById('doors').innerHTML = data[i].doors + `doors`;
                 
-                document.getElementById('type').innerHTML = Value.type;
+                document.getElementById('type').innerHTML = data[i].type;
                 
-                document.getElementById('price').innerHTML = Value.price;
+                document.getElementById('price').innerHTML = `Price from: £` + data[i].price;
                 
-                document.getElementById('car_image').innerHTML = Value.image;          
+                /*document.getElementById('car_link').innerHTML = item['link'];
+
+                document.getElementById('car_image').innerHTML = item['image'];*/          
 
             
             
@@ -29,7 +29,7 @@ showCars();
 
 
 /*  
-car_list.push([value.car, value.range, value.doors, value.type, value.price, value.car_link, value.car_image]);
+car_list.push([Value.car, Value.range, Value.doors, Value.type, Value.price, Value.carink, Value.image]);
  $('a').on('click', addContent);
 
 var min_mileage = get range from ('assets/js/car_list.json');
